@@ -4,6 +4,7 @@ import Bootstrap from './components/Bootstrap';
 import Navigation from './components/Navigation';
 import Todos from '/components/Todos/Todos';
 import Login from './components/Login';
+import Categories from './components/Todos/Categories'
 import { Route, Router, Switch } from 'react-router';
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Login} />
           <Route path="/todos" component={Todos} />
+          <Route path="/categories" component={Categories} />
+          
         </Switch>
       </Router>
     </div>
